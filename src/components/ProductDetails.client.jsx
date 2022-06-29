@@ -10,13 +10,9 @@ import {
 export default function ProductDetails({ product }) {
   return (
     <ProductOptionsProvider data={product}>
-      <section className="xl:max-w-screen-2xl mx-auto p-16 w-full overflow-x-hidden gap-4 md:gap-8 grid px-6 md:px-8 lg:px-12">
-        <div className="grid items-start gap-6 lg:gap-16 md:grid-cols-2 lg:grid-cols-3">
-          <div className="sticky col-span-2 md:col-span-1 md:mx-auto max-w-xl md:max-w-[24rem] grid gap-8 p-0 md:p-6 md:px-0 top-[6rem] lg:top-[8rem] xl:top-[10rem]">
-            <div className="grid gap-2">
-              
-
-            </div>
+      <section className="mx-auto p-16 w-full overflow-x-hidden gap-4 md:gap-8 grid px-6 md:px-8 lg:px-12 xl:max-w-screen-2xl">
+        <div className="grid grids-cols-1 items-start gap-6 lg:gap-16 md:grid-cols-2 lg:grid-cols-3">
+          <div className="sticky mx-auto col-span-2 md:col-span-1 md:mx-auto max-w-xl md:max-w-[24rem] grid gap-8 p-0 md:p-6 md:px-0 top-[6rem] lg:top-[8rem] xl:top-[10rem]">
             <ProductForm product={product} />
             <div className="mt-8">
               <div
@@ -25,9 +21,9 @@ export default function ProductDetails({ product }) {
               ></div>
             </div>
           </div>
-          <div className="grid md:grid-flow-row  md:p-0 md:overflow-x-auto md:grid-cols-2 md:w-full lg:col-span-2">
+          <div className="grid grid-cols-2 md:grid-flow-row  md:p-0 md:overflow-x-auto md:grid-cols-2 md:w-full lg:col-span-2">
 
-            <div className="col-span-2 mt-32 md:col-span-2  snap-center card-image aspect-square md:w-full w-full">
+            <div className="col-span-2 mt-32 md:col-span-2 mx-auto snap-center card-image aspect-square md:w-full w-full">
               <ProductGallery media={product.media.nodes} />
             </div>
           </div>
@@ -67,7 +63,7 @@ function ProductForm({ product }) {
                     variantId={selectedVariant.id}
                     data={product}
                   />
-                <h1 className="text-6xl leading-snug font-light whitespace-normal">
+                <h1 className="text-6xl leading-relaxed font-light whitespace-normal">
                 {product.title}
                 </h1>
                   
@@ -158,7 +154,7 @@ function ProductGallery({ media }) {
 
   return (
     <div
-      className={`grid gap-4 overflow-x-scroll grid-flow-col md:grid-flow-row  md:p-0 md:overflow-x-auto md:grid-cols-2 w-screen md:w-full lg:col-span-2`}
+      className={`grid gap-4 overflow-x-scroll grid-flow-row md:p-0 md:overflow-x-auto md:grid-cols-2 w-screen md:w-full lg:col-span-2`}
     >
       {media.map((med, i) => {
         let extraProps = {};
@@ -183,7 +179,7 @@ function ProductGallery({ media }) {
         return (
           <div
             className={`${i % 3 === 0 ? "md:col-span-2" : "md:col-span-1"
-              } snap-center card-image bg-white aspect-square md:w-full w-[80vw] shadow-sm rounded`}
+              } snap-center card-image bg-white aspect-square md:w-full w-[80vw] mx-auto shadow-sm rounded`}
             key={med.id || med.image.id}
           >
             <MediaFile
