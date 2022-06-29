@@ -11,11 +11,11 @@ export default function Home() {
 
   return (
     <Layout>
-      <div className="xl:max-w-screen-2xl mx-auto p-16 md:mt-16 md:mb-16">
+      <div className="xl:max-w-screen-2xl mx-auto p-6 md:mt-16 md:mb-16">
         <p className="font-light text-2xl leading-relaxed md:text-4xl md:leading-relaxed lg:text-5xl lg:leading-relaxed">Crafted Studios is a design studio based in Los Angeles, California, but working internationally. We’re about people, collaborations, and making things an enjoyable experience for others. This time, we decided to do that through apparel, bringing you our first collection ever. We hope you enjoy these threads and stay comfortable this summer. </p>
       </div>
       <Suspense>
-      <div className="xl:max-w-screen-2xl mx-auto p-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <div className="xl:max-w-screen-2xl mx-auto p-6 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {data.products.nodes.map((product) => {
             return (
               

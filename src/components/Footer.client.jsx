@@ -4,7 +4,7 @@ import { Link } from "@shopify/hydrogen"
 
 export default function Footer() {
     return(
-        <footer className="text-center w-full flex flex-wrap items-center justify-between px-16 py-8 md:max-w-screen-2xl mx-auto md:mt-48 ">
+        <footer className="text-center w-full flex flex-wrap items-center justify-between px-8 py-8 md:max-w-screen-2xl mx-auto md:mt-48 ">
             
                 
                     <div className="mx-auto md:m-0">

@@ -20,21 +20,21 @@ export default function Header({ shop }) {
       </Drawer>
       <header
         role="banner"
-        className={`flex flex-wrap items-center justify-center md:justify-between h-32 p-8 md:p-8 lg:p-12 w-full xl:max-w-screen-2xl mx-auto leading-none gap-4`}
+        className={`flex items-center justify-between h-32 px-8 md:p-8 lg:p-12 w-full xl:max-w-screen-2xl mx-auto leading-none gap-4`}
       >
-        <div className="w-full md:w-auto">
+        <div className="md:w-auto">
           <Link className="font-bold" to="/">
-            <Image className="mx-auto" alt="Crafted Studios" src="../assets/crafted-logo.svg" width={'230px'} height={'auto'}/>
+            <Image alt="Crafted Studios" src="../assets/crafted-logo.svg" width={'230px'} height={'auto'} className="w-4/6 md:w-5/6"/>
           </Link>
         </div>
         <div className="flex items-center gap-4">
-        <Link className="text-lg" to="/">SHOP</Link>
-        <a className="text-lg" href="https://www.craftedstudios.co/">STUDIO</a>
+        <Link className="text-sm md:text-lg border border-gray-900 rounded-full px-2" to="/">SHOP</Link>
+        <a className="text-sm  md:text-lg border border-gray-900 rounded-full px-2" href="https://www.craftedstudios.co/">STUDIO</a>
         <button
           onClick={openDrawer}
           className="relative flex items-center justify-center w-10 h-10"
         >
-          <IconBag />
+          <IconBag className="p-4"/>
           <CartBadge dark={isHome} />
         </button>
         </div>
@@ -49,8 +49,8 @@ function IconBag() {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 20 20"
-      fill="currentColor"
-      className="w-5 h-5"
+      fill="#fff"
+      className="w-7 h-7 bg-black rounded-full p-1"
     >
       <title>Bag</title>
       <path
