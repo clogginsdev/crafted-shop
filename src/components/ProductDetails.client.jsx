@@ -63,7 +63,7 @@ function ProductForm({ product }) {
                     variantId={selectedVariant.id}
                     data={product}
                   />
-                <h1 className="text-6xl leading-relaxed font-light whitespace-normal">
+                <h1 className="text-6xl leading-snug font-light whitespace-normal">
                 {product.title}
                 </h1>
                   
