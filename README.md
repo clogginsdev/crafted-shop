@@ -12,7 +12,7 @@ npm init @shopify/hydrogen@latest --template hello-world-ts
 
 Remember to update `hydrogen.config.js` with your shop's domain and Storefront API token!
 
-## Building for production
+## Building for production..
 
 ```bash
 yarn build
