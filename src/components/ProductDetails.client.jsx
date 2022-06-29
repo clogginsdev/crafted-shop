@@ -179,7 +179,7 @@ function ProductGallery({ media }) {
         return (
           <div
             className={`${i % 3 === 0 ? "md:col-span-2" : "md:col-span-1"
-              } snap-center card-image bg-white aspect-square md:w-full w-[90vw] mr-auto shadow-sm rounded`}
+              } snap-center card-image bg-white aspect-square md:w-full w-[90vw] mr-2 shadow-sm rounded`}
             key={med.id || med.image.id}
           >
             <MediaFile

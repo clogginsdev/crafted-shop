@@ -24,7 +24,7 @@ export default function Header({ shop }) {
       >
         <div className="md:w-auto">
           <Link className="font-bold" to="/">
-            <Image alt="Crafted Studios" src="../assets/crafted-logo.svg" width={'230px'} height={'auto'} className="w-4/6 md:w-5/6"/>
+            <Image alt="Crafted Studios" src="../assets/crafted-logo.svg" width={'230px'} height={'auto'} className="w-5/6 md:w-5/6"/>
           </Link>
         </div>
         <div className="flex items-center gap-4">
