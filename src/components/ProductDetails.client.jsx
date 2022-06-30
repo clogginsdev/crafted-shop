@@ -10,7 +10,7 @@ import {
 export default function ProductDetails({ product }) {
   return (
     <ProductOptionsProvider data={product}>
-      <section className="mx-auto p-16 w-full overflow-x-hidden gap-4 md:gap-8 grid px-6 md:px-8 lg:px-12 xl:max-w-screen-2xl">
+      <section className="mx-auto mb-52 p-16 px-8 w-full overflow-x-hidden gap-4 md:gap-8 grid px-6 md:px-12">
         <div className="grid grids-cols-1 items-start gap-6 lg:gap-16 md:grid-cols-2 lg:grid-cols-3">
           <div className="sticky mx-auto col-span-2 md:col-span-1 md:mx-auto max-w-xl md:max-w-[24rem] grid gap-8 p-0 md:p-6 md:px-0 top-[6rem] lg:top-[8rem] xl:top-[10rem]">
             <ProductForm product={product} />
