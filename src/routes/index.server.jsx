@@ -17,7 +17,7 @@ export default function Home() {
       <Suspense>
       <section className="px-8 mb-52 md:px-12">
         <h2 className="text-2xl mb-24 md:text-5xl">Discover our Summer Collection</h2>
-      <div className="grid grid-cols-1 md:gap-6 md:grid-cols-3 lg:gap-8">
+      <div className="grid grid-cols-1 gap-8 md:gap-6 md:grid-cols-3 lg:gap-8">
         
         {data.products.nodes.map((product) => {
           return (
