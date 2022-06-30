@@ -14,12 +14,12 @@ export default function ProductDetails({ product }) {
         <div className="grid grids-cols-1 items-start gap-6 lg:gap-16 md:grid-cols-2 lg:grid-cols-3">
           <div className="sticky mx-auto col-span-2 md:col-span-1 md:mx-auto max-w-xl md:max-w-[24rem] grid gap-8 p-0 md:p-6 md:px-0 top-[6rem] lg:top-[8rem] xl:top-[10rem]">
             <ProductForm product={product} />
-            <div className="mt-8">
-              <h1 className="text-lg">Product Details</h1>
+            <div className="mt-8 border-t border-gray-200">
+              <h1 className="text-2xl mt-8 ">Product Details</h1>
             </div>
-            <div className="mt-4">
+            <div>
               <div
-                className="prose border-t border-gray-200 pt-6 text-black text-md"
+                className="prose pt-2 text-black text-md"
                 dangerouslySetInnerHTML={{ __html: product.descriptionHtml }}
               ></div>
             </div>
@@ -66,7 +66,7 @@ function ProductForm({ product }) {
                     variantId={selectedVariant.id}
                     data={product}
                   />
-                <h1 className="text-6xl leading-snug font-light whitespace-normal">
+                <h1 className="text-5xl leading-snug whitespace-normal">
                 {product.title}
                 </h1>
                   
@@ -139,7 +139,7 @@ function OptionRadio({ values, name }) {
               onChange={() => setSelectedOption(name, value)}
             />
             <div
-              className={`${checked ? "border-[2px] px-6 rounded-full border-gray-900" : "border-[1px] px-6 rounded-full  border-gray-700"}`}
+              className={`${checked ? "border-[2px] px-6 py-2 rounded-full border-gray-900" : "border-[1px] px-6 py-2 rounded-full  border-gray-700"}`}
             >
               {value}
             </div>
