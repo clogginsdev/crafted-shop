@@ -162,7 +162,7 @@ import {
               </button>
             </div>
           </div>
-          <span>
+          <span className="ml-2">
             <CartLinePrice as="span" />
           </span>
         </div>
