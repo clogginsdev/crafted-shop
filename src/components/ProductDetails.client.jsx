@@ -15,6 +15,9 @@ export default function ProductDetails({ product }) {
           <div className="sticky mx-auto col-span-2 md:col-span-1 md:mx-auto max-w-xl md:max-w-[24rem] grid gap-8 p-0 md:p-6 md:px-0 top-[6rem] lg:top-[8rem] xl:top-[10rem]">
             <ProductForm product={product} />
             <div className="mt-8">
+              <h1 className="text-lg">Product Details</h1>
+            </div>
+            <div className="mt-4">
               <div
                 className="prose border-t border-gray-200 pt-6 text-black text-md"
                 dangerouslySetInnerHTML={{ __html: product.descriptionHtml }}

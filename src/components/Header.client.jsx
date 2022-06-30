@@ -20,7 +20,7 @@ export default function Header({ shop }) {
       </Drawer>
       <header
         role="banner"
-        className={`flex items-center justify-between h-32 px-8 md:p-8 lg:p-12 w-full xl:max-w-screen-2xl mx-auto leading-none gap-4`}
+        className={`flex items-center justify-between py-12 px-8 md:px-12 `}
       >
         <div className="md:w-auto">
           <Link className="font-bold" to="/">
@@ -28,8 +28,8 @@ export default function Header({ shop }) {
           </Link>
         </div>
         <div className="flex items-center gap-4">
-        <Link className="text-sm md:text-lg border border-gray-900 rounded-full px-2" to="/">SHOP</Link>
-        <a className="text-sm  md:text-lg border border-gray-900 rounded-full px-2" href="https://www.craftedstudios.co/">STUDIO</a>
+        <Link className="text-sm md:text-lg border border-gray-900 rounded-full px-2 py-1" to="/">SHOP</Link>
+        <a className="text-sm  md:text-lg border border-gray-900 rounded-full px-2 py-1" href="https://www.craftedstudios.co/">STUDIO</a>
         <button
           onClick={openDrawer}
           className="relative flex items-center justify-center w-10 h-10"
