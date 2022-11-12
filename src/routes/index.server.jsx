@@ -44,7 +44,7 @@ export default function Home() {
 
 const QUERY = gql`
 {
-  products (first: 6) {
+  products (first: 10) {
     nodes {
       featuredImage {
         url
